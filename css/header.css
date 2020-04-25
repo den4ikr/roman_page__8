@@ -1,0 +1,152 @@
+.header {}
+
+.container {}
+
+.header__menu {
+	height: 150px;
+}
+
+.header__menu-row {
+	height: 150px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.header__block {}
+
+.header__logo {}
+
+.header__search {}
+
+.header__burger {}
+
+
+.header__main {}
+
+.main__row {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+
+}
+
+.main__img{
+	position: relative;
+	max-width: 700px;
+	background: url(../img/gradient.png) 0 0 / 100% no-repeat;
+}	
+
+.main__image{
+	display: block;
+	transform: translate(-440px, 200px);
+}
+
+.loader img{
+	display: block;
+	margin-top: 350px;
+	max-width: 300px;
+}
+
+.main__body {
+	margin-left: 120px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	height: 400px;
+	justify-content: space-between;
+}
+
+.main__title {
+	margin-top: 30px;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 60px;
+	line-height: 70px;
+	letter-spacing: -1px;
+	max-width: 474px;
+	color: #151515;
+}
+
+.main__text {
+	margin-top: 20px;
+	margin-bottom: 55px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 28px;
+	max-width: 474px;
+	color: #222222;
+	opacity: 0.7;
+}
+
+.main__btn {}
+
+.main__btn button{
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: center;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	width: 189px;
+	height: 50px;
+	background-color: #4737FF;
+}
+
+.main__img {}
+
+
+@media(max-width: 768px) {
+	.loader img{
+		margin-top: 30px;
+	}
+	.header__logo{
+		padding-left: 10px;
+	}
+	.header__burger{
+		padding-right: 10px;
+	}
+	.main__row{
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+	.main__img{
+		display: none;
+	}
+	.main__body{
+		margin-left: 0;
+		margin: 0 auto;
+	}
+}
+@media(max-width: 500px) {
+	.main__body{
+		padding-left: 10px;
+	}
+}
+@media(max-width: 464px) {
+	.main__title{
+		font-size: 35px;
+	}
+}
